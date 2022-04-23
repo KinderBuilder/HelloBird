@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B55F5F">
+
+    <Button
+        android:id="@+id/loadButtonBoard"
+        android:layout_width="136dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="137dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/loadButtonText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/createButtonBoard"
+        android:layout_width="136dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="275dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/createButtonText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.example.hellobird.paintView
+        android:id="@+id/testPaint"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="#9E9C9C"
+        android:backgroundTint="#03A9F4"
+        app:layout_constraintBottom_toTopOf="@id/optionButtonBoard"
+        app:layout_constraintLeft_toLeftOf="@id/saveButtonBoard"
+        app:layout_constraintTop_toBottomOf="@id/saveButtonBoard"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/optionButtonBoard"
+        android:layout_width="136dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="228dp"
+        android:layout_marginBottom="8dp"
+        android:background="#FF00FB"
+        android:text="@string/optionsButtonText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/saveButtonBoard"
+        android:layout_width="136dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/saveButtonText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/clearButtonBoard"
+        android:layout_width="129dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="224dp"
+        android:layout_marginBottom="4dp"
+        android:text="@string/clearButtonBoard"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="128dp"
+        android:layout_height="22dp"
+        android:text="Test"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
